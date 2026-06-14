@@ -406,3 +406,22 @@ max-width:350px;
     font-size:36px;
     margin-bottom:10px;
 }
+.social-buttons{
+    margin-top:25px;
+}
+
+.social-buttons a{
+    display:inline-block;
+    margin:10px;
+    padding:12px 24px;
+    text-decoration:none;
+    background:#38bdf8;
+    color:white;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.social-buttons a:hover{
+    transform:translateY(-3px);
+    background:#0ea5e9;
+}
