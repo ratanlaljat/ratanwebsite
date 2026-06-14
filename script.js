@@ -1,37 +1,19 @@
-const texts = [
-  "Electronics & Communication Engineer",
-  "Researcher",
-  "Embedded Systems Enthusiast",
-  "Technology Innovator"
+const text = document.getElementById("typing-text");
+
+const roles = [
+    "Electronics & Communication Engineer",
+    "Researcher",
+    "Embedded Systems Enthusiast",
+    "Technology Innovator"
 ];
 
-let count = 0;
-let index = 0;
-let currentText = "";
-let letter = "";
+let roleIndex = 0;
 
-(function type() {
+setInterval(() => {
+    text.textContent = roles[roleIndex];
+    roleIndex++;
 
-  if (count === texts.length) {
-    count = 0;
-  }
-
-  currentText = texts[count];
-  letter = currentText.slice(0, ++index);
-
-  document.getElementById("typing-text").textContent = letter;
-
-  if (letter.length === currentText.length) {
-
-    setTimeout(() => {
-      index = 0;
-      count++;
-      type();
-    }, 1500);
-
-  } else {
-
-    setTimeout(type, 100);
-  }
-
-})(); 
+    if(roleIndex >= roles.length){
+        roleIndex = 0;
+    }
+}, 2000);

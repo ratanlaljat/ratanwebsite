@@ -1,5 +1,6 @@
 html{
     scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }html{
 scroll-behavior:smooth;
 }
@@ -19,6 +20,11 @@ color:white;
 /* Navbar */
 
 nav{
+    backdrop-filter: blur(10px);
+background: rgba(15,23,42,0.85);
+position: sticky;
+top: 0;
+z-index: 1000;
 display:flex;
 justify-content:space-between;
 align-items:center;
