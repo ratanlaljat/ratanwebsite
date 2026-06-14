@@ -171,7 +171,7 @@ transition:0.3s;
 
 .project-card:hover{
 transform:translateY(-10px);
-box-shadow:0 5px 20px rgba(56,189,248,0.3);
+box-shadow:0 0 30px rgba(56,189,248,0.7);
 }
 
 .project-card h3{
@@ -430,4 +430,19 @@ max-width:350px;
     font-size:1.3rem;
     font-weight:600;
     min-height:40px;
+}
+.project-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:8px;
+transition:0.3s;
+}
+
+.project-btn:hover{
+background:#0ea5e9;
+box-shadow:0 0 15px #38bdf8;
 }
