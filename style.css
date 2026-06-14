@@ -425,3 +425,9 @@ max-width:350px;
     transform:translateY(-3px);
     background:#0ea5e9;
 }
+#typing-text{
+    color:#7df9ff;
+    font-size:1.3rem;
+    font-weight:600;
+    min-height:40px;
+}

@@ -1,15 +1,37 @@
-console.log("Website Loaded Successfully");
+const texts = [
+  "Electronics & Communication Engineer",
+  "Researcher",
+  "Embedded Systems Enthusiast",
+  "Technology Innovator"
+];
 
-// Contact Form Message
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
 
-const form = document.querySelector(".contact-form");
+(function type() {
 
-form.addEventListener("submit", function(event){
+  if (count === texts.length) {
+    count = 0;
+  }
 
-event.preventDefault();
+  currentText = texts[count];
+  letter = currentText.slice(0, ++index);
 
-alert("Thank You! Your message has been received.");
+  document.getElementById("typing-text").textContent = letter;
 
-form.reset();
+  if (letter.length === currentText.length) {
 
-});
+    setTimeout(() => {
+      index = 0;
+      count++;
+      type();
+    }, 1500);
+
+  } else {
+
+    setTimeout(type, 100);
+  }
+
+})(); 
