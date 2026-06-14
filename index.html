@@ -238,16 +238,17 @@ Open PDF
 
 <form class="contact-form">
 
-    <input type="text" placeholder="Your Name">
+    <form class="contact-form" action="mailto:rlaljat80@gmail.com" method="post" enctype="text/plain">
 
-    <input type="email" placeholder="Your Email">
+<input type="text" name="name" placeholder="Your Name" required>
 
-    <textarea placeholder="Your Message"></textarea>
+<input type="email" name="email" placeholder="Your Email" required>
 
-    <button type="submit">Send Message</button>
+<textarea name="message" placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
 
 </form>
-
 
 </section>
 
